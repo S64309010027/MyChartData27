@@ -7,6 +7,20 @@ import { NavController } from 'ionic-angular';
 })
 export class ContactPage {
 
+  // Doughnut
+public doughnutChartLabels:string[] = ['Human', 'Demon', 'elves'];
+public doughnutChartData:number[] = [350, 450, 210];
+public doughnutChartType:string = 'doughnut';
+
+// events
+public chartClicked(e:any):void {
+  console.log(e);
+}
+
+public chartHovered(e:any):void {
+  console.log(e);
+}
+
   constructor(public navCtrl: NavController) {
 
   }
